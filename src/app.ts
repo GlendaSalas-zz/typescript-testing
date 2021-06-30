@@ -1,29 +1,22 @@
-
-interface AddFn {
-    (a: number, b: number): number;
+type Admin = {
+    name: string;
+    privileges: string[];
 }
-interface Named {
-    readonly name?: string; // set only once
-    outputName?: string; // optional property
-}
-interface Greetable extends Named { // interface to describe the definition of a object, no implementation
-    greet(phrase: string): void;
-}
-class Person implements Greetable { // this class follow the interface above
-    name?: string;
-    age = 30;
 
-    constructor(name?: string){
-        if (name) this.name = name;
-    }
-    greet(phrase: string){
-        if (this.name) console.log(phrase, ' ', this.name);
-        else console.log(phrase)
-    }
+type Employee = {
+    name: string;
+    starDate: Date;
 }
-let user1: Greetable;
 
-user1 = new Person();
-console.log(user1)
+type ElevatedEmployee = Admin & Employee;
 
-user1.greet('Hello stranger! My name is')
+const e1: ElevatedEmployee = {
+    name: 'Max',
+    privileges: ['created-server'],
+    starDate: new Date(),
+}
+
+type Combinable = string | number; // instersection types
+type Numeric = number | boolean;
+
+type Universal = Combinable & Numeric;

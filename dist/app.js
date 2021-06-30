@@ -1,19 +1,7 @@
 "use strict";
-class Person {
-    constructor(name) {
-        this.age = 30;
-        if (name)
-            this.name = name;
-    }
-    greet(phrase) {
-        if (this.name)
-            console.log(phrase, ' ', this.name);
-        else
-            console.log(phrase);
-    }
-}
-let user1;
-user1 = new Person();
-console.log(user1);
-user1.greet('Hello stranger! My name is');
+const e1 = {
+    name: 'Max',
+    privileges: ['created-server'],
+    starDate: new Date(),
+};
 //# sourceMappingURL=app.js.map

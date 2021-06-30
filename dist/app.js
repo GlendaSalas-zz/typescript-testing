@@ -56,4 +56,9 @@ moveAnimal({
     type: 'bird',
     flyingSpeed: 200,
 });
+const userInput = document.getElementById('u');
+console.log(userInput);
+if (userInput) {
+    userInput.value = "Hi there";
+}
 //# sourceMappingURL=app.js.map

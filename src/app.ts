@@ -100,3 +100,15 @@ moveAnimal({
     type: 'bird',
     flyingSpeed: 200,
 })
+
+// type casting
+
+// const userInput = <HTMLInputElement>document.getElementById("u")!; //TOTAL RIGHT! this excclamation never null
+const userInput = document.getElementById('u'); // total right!
+console.log(userInput)
+if (userInput) {
+    (<HTMLInputElement>userInput).value = "Hi there";
+}
+
+
+

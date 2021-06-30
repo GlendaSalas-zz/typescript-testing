@@ -1,5 +1,7 @@
-interface Greetable { // interface to describe the definition of a object, no implementation
+interface Named {
     readonly name: string; // set only once
+}
+interface Greetable extends Named { // interface to describe the definition of a object, no implementation
 
     greet(phrase: string): void;
 }

@@ -110,5 +110,12 @@ if (userInput) {
     (<HTMLInputElement>userInput).value = "Hi there";
 }
 
+interface ErrorContainer {
+    [prop: string]: string; // i don't know the name of the property, but the only i know is that is a string, this is a index
+}
 
+const errorBag: ErrorContainer = {
+    email: 'Not valid email!',
+    username: 'Must start with a capital letter',
+}
 

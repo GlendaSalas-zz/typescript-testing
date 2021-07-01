@@ -42,7 +42,12 @@ const fetchUserData = {
     }
 }
 console.log(fetchUserData?.job?.title); // check if exists
+// nullish collactions
+const UserData = '';
 
+const user = UserData ?? 'UNDEFINED'; // nullish collactions
+
+console.log(user)
 // type UnknownEmployee = Admin | Employee;
 
 // function printEmployoyeeInformation(emp: UnknownEmployee){

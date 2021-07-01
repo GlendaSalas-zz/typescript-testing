@@ -22,4 +22,7 @@ const fetchUserData = {
     }
 };
 console.log((_a = fetchUserData === null || fetchUserData === void 0 ? void 0 : fetchUserData.job) === null || _a === void 0 ? void 0 : _a.title);
+const UserData = '';
+const user = UserData !== null && UserData !== void 0 ? UserData : 'UNDEFINED';
+console.log(user);
 //# sourceMappingURL=app.js.map
